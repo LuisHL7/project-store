@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowLogin</class>
+ <widget class="QMainWindow" name="MainWindowLogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="FrmLogin">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:reflect, x1:0.543, y1:0, x2:0.541, y2:1, stop:0.300766 rgba(11, 255, 240, 255), stop:1 rgba(68, 0, 127, 255));
+
+border-radius:20px;
+border:1px solid #00007f;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>0</y>
+         <width>201</width>
+         <height>211</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0,0%);
+border:none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/logo.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>200</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0,0%);
+font: 75 16pt &quot;Arial&quot;;
+border:none</string>
+       </property>
+       <property name="text">
+        <string>Usuario</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>290</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0,0%);
+font: 75 16pt &quot;Arial&quot;;
+border:none</string>
+       </property>
+       <property name="text">
+        <string>Contraseña</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TxtUser">
+       <property name="geometry">
+        <rect>
+         <x>152</x>
+         <y>240</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255,255);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+border-radius:10px;
+border:none</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Ingrese su usuario</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="TxtPassword">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>330</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255,255);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+border-radius:10px;
+border:none</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Ingrese su contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ButLogin">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>390</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(0, 255, 0);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+border:5px solid #ffffff;
+}
+
+QPushButton:hover{
+background-color: rgb(255, 255, 0);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+border:5px solid #0000f;
+}</string>
+       </property>
+       <property name="text">
+        <string>Iniciar Sesión</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="LineProgress">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>460</y>
+         <width>361</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+background-color: rgba(0, 0,0, 0%);
+border-radius:25px;
+border:1px solid #00007f;
+}
+
+QProgressBar:chunk{
+background-color: qlineargradient(spread:reflect, x1:0.995263, y1:0.563, x2:0.574, y2:0.574, stop:0.301843 rgba(11, 255, 240, 255), stop:1 rgba(68, 0, 127, 255));
+border-radius:25px;
+}</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ButClose">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>540</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color: rgb(0, 0, 0, 0%);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+border:0px;
+}
+
+QPushButton:hover{
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+	background-color: qlineargradient(spread:reflect, x1:0.543, y1:0, x2:0.541, y2:1, stop:0.300766 rgba(11, 255, 240, 255), stop:1 rgba(68, 0, 127, 255));
+border:0px ;
+}</string>
+       </property>
+       <property name="text">
+        <string>Salir</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LbLoad">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>510</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>11</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0, 0, 0,0%);
+font: 75 11pt &quot;Arial&quot;;
+border:none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>491</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
